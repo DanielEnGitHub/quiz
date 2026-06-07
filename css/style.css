@@ -609,14 +609,19 @@ button {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 15px;
   color: #4e54c8;
-  text-align: left;
+  text-align: center;
   min-height: 320px;
   user-select: none;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 
-.typing-text span {
+.word-group {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.typing-text span:not(.word-group) {
   position: relative;
   display: inline-block;
   min-width: 0.6em;

@@ -288,8 +288,21 @@ class TypingTestManager {
     const typingTextElement = document.getElementById("typingText");
     if (!typingTextElement) return;
     typingTextElement.innerHTML = "";
+
+    let wordWrapper = null;
     this.state.currentText.split("").forEach((char, index) => {
-      typingTextElement.appendChild(this.createCharSpan(char, index));
+      const span = this.createCharSpan(char, index);
+      if (char === " ") {
+        wordWrapper = null;
+        typingTextElement.appendChild(span);
+      } else {
+        if (!wordWrapper) {
+          wordWrapper = document.createElement("span");
+          wordWrapper.className = "word-group";
+          typingTextElement.appendChild(wordWrapper);
+        }
+        wordWrapper.appendChild(span);
+      }
     });
   }
 
@@ -319,7 +332,7 @@ class TypingTestManager {
 
     const typingTextElement = document.getElementById("typingText");
     if (!typingTextElement) return;
-    const spans = typingTextElement.querySelectorAll("span");
+    const spans = typingTextElement.querySelectorAll("span:not(.word-group)");
 
     if (e.key === "Backspace") {
       this.handleBackspace(spans);
