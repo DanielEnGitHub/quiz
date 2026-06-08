@@ -298,7 +298,7 @@ const principiante = [
       "Para buscar programas o juegos",
       "Para mover el mouse",
     ],
-    answer: 0,
+    answer: 1,
     topic: "word",
   },
 ];
