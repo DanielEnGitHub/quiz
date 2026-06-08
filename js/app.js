@@ -15,18 +15,19 @@ const CONFIG = {
   AVATAR_CLOSE_DELAY: 300,
   CONFETTI_PIECES: 100,
   CONFETTI_INTERVAL: 200,
-  SPECIAL_CHARS_REGEX: /[=:;()"!\/¿?.,-]/g,
+  SPECIAL_CHARS_REGEX: /[:;()"!¿?.,-]/g,
   TYPING_TEXTS: [
-    'Isaac Newton (1642-1727) formuló: F = m/a; "la gravedad une todo", ¡increíble! ¿Cómo lo logró? - Con observación paciente. Estudió en Cambridge; cambió la física para siempre. Newton decía: "me apoyé en hombros de gigantes". Su mente = curiosidad/disciplina; eso lo convirtió en uno de los más grandes. ¡Una figura extraordinaria! Todo comenzó con una manzana - según la historia.',
-    'Marie Curie (1867-1934) descubrió: radio = energía/tiempo; "la ciencia - sin límites - ¡es de todos!" ¡Asombroso! Nació en Polonia; estudió en París. Su fórmula = esfuerzo/constancia; ¡nunca se rindió! ¿Cómo lo logró? - Con pasión. Curie decía: "no hay nada que temer, solo comprender". Ganó dos Nobel (1903 y 1911); ¡sin precedentes!',
-    'Nikola Tesla (1856-1943) declaró: V = I/R; "la electricidad - esa fuerza - ¡cambia el mundo!" ¿Quién lo hubiera imaginado? Nació en Serbia; soñó con dominar la energía. Su invento = corriente alterna/distribución; ¡transformó la industria! La historia recuerda su pelea con Edison - la "guerra de corrientes". Vivió solo, dedicado al trabajo; murió sin fortuna.',
-    'Einstein (1879-1955) escribió: "c = d/t; la velocidad - esa constante - ¡es el límite!" ¿Quién podría imaginarlo? Nació en Alemania; su mente era excepcional. Su teoría = espacio/tiempo; ¡nadie lo había pensado antes! ¿Cómo llegó ahí? - Con imaginación pura. Einstein decía: "la imaginación es más importante que el conocimiento". Su método = intuición/matemática; ¡una mezcla única!',
-    'Charles Darwin (1809-1882) escribió: "éxito = adaptación/tiempo"; ¡la vida siempre cambia! - Selección natural. Su viaje en el Beagle (1831-1836) fue clave; ¡observó especies únicas! Darwin anotó: "sobrevive el más apto"; ¡una idea que sacudió al mundo! Tardó 20 años en publicar "El Origen de las Especies". ¿Una coincidencia? - No, fue pura valentía.',
-    'Ada Lovelace (1815-1852) soñó: "algoritmo = instrucción/lógica; ¡el futuro era código!" ¡Visionaria! Hija del poeta Byron; creció entre arte y ciencia. Trabajó con Babbage; ¡fue pionera! ¿Quién escribió el primer algoritmo? - Ada, ella misma. Ada creía: "la imaginación = puente/realidad". Vivió 36 años - poco tiempo - pero dejó una huella enorme.',
-    'Mozart (1756-1791) compuso: "nota = silencio/tiempo; ¡la música sana el alma!" ¡Conmovedor! Nació en Salzburgo; tocaba el piano a los tres años, ¡increíble! ¿Cómo era posible? - Era un genio natural. Su padre lo llevó de gira (desde los 6 años); ¡tocó ante reyes! Su obra = melodía/armonía; más de 600 piezas que siguen vivas hoy.',
-    'Frida Kahlo (1907-1954) pintó: "arte = dolor/color; ¡cada obra - única - habla!" ¡Emocionante! Nació en México; sufrió un accidente a los 18 años, ¡devastador! ¿Cómo siguió? - Pintando desde la cama. Frida decía: "pinto porque lo necesito; es mi vida". Su estilo = autobiografía/surrealismo; ¡sorprendió al mundo! Se casó (y divorció) con Rivera.',
-    'Leonardo da Vinci (1452-1519) creó: "genio = arte/ciencia; ¡pintó y soñó máquinas!" ¿Artista o inventor? - Ambos, sin duda. Nació en Italia; sin estudios formales - lo aprendió todo solo. Su cuaderno = diseño/invención; ¡anticipó el helicóptero y el submarino! Leonardo decía: "aprender = observar/registrar; la naturaleza es el mejor maestro". ¡Qué mente!',
-    'Stephen Hawking (1942-2018) afirmó: "universo = materia/energía; ¡el tiempo - siempre - avanza!" ¡Extraordinario! Nació en Oxford; le diagnosticaron ELA a los 21 años, ¡devastador! ¿Cómo siguió? - Con voluntad de hierro. Hawking decía: "siempre hay algo que hacer = intentar/persistir". Vivió paralizado - durante décadas - pero su mente nunca paró. ¡Qué ejemplo!',
+    'Antes de que Sansón naciera, un ángel se apareció a su madre y le dijo: "Tendrás un hijo especial; nunca deberá cortarse el cabello." Desde joven, Sansón demostró una fuerza sobrenatural - mató a un león con sus propias manos y derrotó a muchos enemigos filisteos él solo. !Era verdaderamente extraordinario! Sin embargo, tenía una debilidad: no siempre tomaba buenas decisiones. Se enamoró de Dalila, una mujer que trabajaba para sus enemigos. Ella le preguntó muchas veces: "¿Cuál es el secreto de tu fuerza?" Finalmente, Sansón confesó la verdad. Lo traicionaron (mientras dormía), le cortaron el cabello y lo capturaron. En la cárcel, su cabello volvió a crecer; Sansón oró con humildad y Dios le restauró su fuerza. Su historia nos recuerda: los dones de Dios son para usarse con responsabilidad.',
+
+    'Ana había orado durante años por tener un hijo; le prometió a Dios: "Si me das un niño, te lo devolveré para que te sirva toda su vida." Dios escuchó su oración y nació Samuel. Cuando era pequeño (apenas unos años), su madre lo llevó al templo con el sacerdote Elí. Una noche, Samuel escuchó una voz que lo llamaba: "!Samuel, Samuel!" Él corrió donde Elí y le dijo: "!Aquí estoy!; ¿me llamaste?" Pero Elí respondió: "Yo no te llamé - vuelve a acostarte." Esto ocurrió tres veces. Finalmente, Elí entendió que era Dios quien llamaba al niño y le explicó: "Si te llama de nuevo, di: Habla, Señor; tu siervo escucha." Samuel obedeció y desde esa noche se convirtió en profeta de Israel.',
+
+    'David era el más joven de ocho hermanos; pasaba sus días cuidando ovejas en el campo. Nadie esperaba que ese muchacho - pequeño y sencillo - llegara a ser rey de Israel. Cuando el profeta Samuel fue a la casa de Jesé para ungir al nuevo rey, Dios le dijo algo importante: "Los seres humanos ven lo exterior, pero yo veo el corazón." Así fue como eligió a David. Sin embargo, el camino no fue fácil: David enfrentó al gigante Goliat (con solo una honda y una piedra), huyó del rey Saúl por años, y cometió errores graves. Aun así, siempre regresó a Dios con arrepentimiento sincero. !Por eso Dios lo llamó "un hombre conforme a su corazón"! La historia de David nos enseña que no importa cuántas veces caigamos; lo que importa es levantarse y volver a Dios.',
+
+    'David no solo fue un guerrero valiente; también fue poeta y músico. Desde niño aprendió a tocar el arpa - instrumento que usaba para adorar a Dios mientras cuidaba sus ovejas. Escribió muchos salmos (canciones de oración) que todavía leemos hoy. El más famoso es el Salmo 23, que dice: "El Señor es mi pastor; nada me faltará." ¿Por qué lo comparó con un pastor? Porque David conocía muy bien ese trabajo: sabía que el pastor guía, protege y cuida a sus ovejas con amor. Cuando David pasó por momentos difíciles - persecuciones, guerras y tristezas - siempre encontró paz en la oración. Sus palabras nos recuerdan algo hermoso: Dios nos cuida como un pastor a sus ovejas, y jamás nos abandona. !Qué privilegio tan grande es ser amado por Él!',
+
+    'Al principio no existía nada - solo oscuridad total. Entonces Dios habló, y todo comenzó a tomar forma. En el primer día creó la luz; en el segundo, separó las aguas del cielo. El tercer día apareció la tierra seca (con plantas y árboles llenos de frutos). El cuarto día colocó el sol, la luna y las estrellas. !Qué espectáculo tan impresionante debió ser! El quinto día llenó los mares con peces y el cielo con aves de toda clase. El sexto día fue el más especial: creó a los animales terrestres y luego, con mucho cuidado, formó al ser humano. Dios dijo: "Hagamos al hombre a nuestra imagen y semejanza." Lo creó del polvo de la tierra y sopló vida en él. ¿Sabes lo que significa eso? Que cada persona tiene algo de Dios en su interior. Al séptimo día Él descansó, bendiciendo ese día como especial.',
+
+    'Un maestro de la ley le preguntó a Jesús: "¿Quién es mi prójimo?" Jesús respondió con una historia: un hombre viajaba de Jerusalén a Jericó - un camino peligroso - cuando unos ladrones lo atacaron; lo dejaron herido y sin nada. Pasó un sacerdote (persona importante de la iglesia) y lo vio, pero cruzó al otro lado. Luego pasó otro líder religioso; tampoco se detuvo. Finalmente llegó un samaritano - alguien a quien los judíos despreciaban - y al ver al herido, se llenó de compasión. Lo curó, lo cargó en su burro, lo llevó a una posada y pagó todos los gastos. !Eso sí es amor al prójimo! Jesús preguntó: "¿Cuál de los tres fue el verdadero prójimo?" La respuesta era clara: el que mostró misericordia. Luego dijo algo que debemos recordar siempre: "Ve y haz tú lo mismo."',
   ],
 };
 
@@ -45,11 +46,25 @@ class SettingsManager {
       const saved = localStorage.getItem("quizSettings");
       if (saved) return JSON.parse(saved);
     } catch {}
-    return { phase1: false, phase2: true, questionSet: Object.keys(QUESTION_SETS)[0], questionLimit: 10, maxPts1: 20, maxPts2: 20 };
+    return {
+      phase1: false,
+      phase2: true,
+      questionSet: Object.keys(QUESTION_SETS)[0],
+      questionLimit: 10,
+      maxPts1: 20,
+      maxPts2: 20,
+    };
   }
 
   save(phase1, phase2, questionSet, questionLimit, maxPts1, maxPts2) {
-    this.settings = { phase1, phase2, questionSet, questionLimit, maxPts1, maxPts2 };
+    this.settings = {
+      phase1,
+      phase2,
+      questionSet,
+      questionLimit,
+      maxPts1,
+      maxPts2,
+    };
     localStorage.setItem("quizSettings", JSON.stringify(this.settings));
   }
 }
@@ -135,7 +150,10 @@ class QuizManager {
   }
 
   initialize(questions, limit) {
-    this.currentLimit = Math.min(limit || this.config.QUESTION_LIMIT, questions.length);
+    this.currentLimit = Math.min(
+      limit || this.config.QUESTION_LIMIT,
+      questions.length,
+    );
     this.state.questions = [...questions];
     this.state.counter = 0;
     this.state.correctAnswers = 0;
@@ -162,7 +180,9 @@ class QuizManager {
     this.elements.questionText.innerHTML = currentQuestion.q;
 
     if (currentQuestion.img) {
-      this.elements.questionText.appendChild(this.createQuestionImage(currentQuestion.img));
+      this.elements.questionText.appendChild(
+        this.createQuestionImage(currentQuestion.img),
+      );
     }
   }
 
@@ -203,7 +223,11 @@ class QuizManager {
   }
 
   handleOptionSelect(optionElement) {
-    if (optionElement.classList.contains("already-answered") || !this.state.optionsEnabled) return;
+    if (
+      optionElement.classList.contains("already-answered") ||
+      !this.state.optionsEnabled
+    )
+      return;
 
     const selectedIndex = parseInt(optionElement.dataset.index);
     const isCorrect = selectedIndex === this.state.currentQuestion.answer;
@@ -225,7 +249,8 @@ class QuizManager {
   highlightCorrectAnswer() {
     const correctIndex = this.state.currentQuestion.answer;
     Array.from(this.elements.optionContainer.children).forEach((option) => {
-      if (parseInt(option.dataset.index) === correctIndex) option.classList.add("correct");
+      if (parseInt(option.dataset.index) === correctIndex)
+        option.classList.add("correct");
     });
   }
 
@@ -243,7 +268,8 @@ class QuizManager {
   }
 
   updateAnswerIndicator(markType) {
-    const indicator = this.elements.answersIndicator.children[this.state.counter - 1];
+    const indicator =
+      this.elements.answersIndicator.children[this.state.counter - 1];
     if (indicator) indicator.classList.add(markType);
   }
 
@@ -322,10 +348,16 @@ class TypingTestManager {
   }
 
   handleInput(e) {
-    if (e.key === "Dead") { this.deadKey = e.code; return; }
+    if (e.key === "Dead") {
+      this.deadKey = e.code;
+      return;
+    }
 
     let char = e.key;
-    if (this.deadKey) { char = this.applyAccent(char); this.deadKey = null; }
+    if (this.deadKey) {
+      char = this.applyAccent(char);
+      this.deadKey = null;
+    }
     if (!this.isValidKey(e.key)) return;
 
     e.preventDefault();
@@ -377,7 +409,8 @@ class TypingTestManager {
 
     const isSpace = spans[this.state.currentIndex].hasAttribute("data-space");
     spans[this.state.currentIndex].className = "char-current";
-    if (isSpace) spans[this.state.currentIndex].setAttribute("data-space", "true");
+    if (isSpace)
+      spans[this.state.currentIndex].setAttribute("data-space", "true");
   }
 
   handleCharacterInput(char, key, spans) {
@@ -392,10 +425,15 @@ class TypingTestManager {
     const isSpace = spans[currentIndex].hasAttribute("data-space");
 
     spans[currentIndex].classList.remove("char-current", "char-pending");
-    spans[currentIndex].classList.add(isCorrect ? "char-correct" : "char-incorrect");
+    spans[currentIndex].classList.add(
+      isCorrect ? "char-correct" : "char-incorrect",
+    );
     if (isSpace) spans[currentIndex].setAttribute("data-space", "true");
 
-    if (!isCorrect) { this.state.errors++; this.state.totalErrors++; }
+    if (!isCorrect) {
+      this.state.errors++;
+      this.state.totalErrors++;
+    }
 
     this.state.currentIndex++;
 
@@ -413,11 +451,15 @@ class TypingTestManager {
     let correctSpecialChars = 0;
     const len = Math.min(this.typedText.length, currentText.length);
     for (let i = 0; i < len; i++) {
-      if (this.typedText[i] === currentText[i] && specialRegex.test(currentText[i])) {
+      if (
+        this.typedText[i] === currentText[i] &&
+        specialRegex.test(currentText[i])
+      ) {
         correctSpecialChars++;
       }
     }
-    const totalSpecialChars = (currentText.match(/[=:;()"!\/¿?.,-]/g) || []).length;
+    const totalSpecialChars = (currentText.match(/[=:;()"!\/¿?.,-]/g) || [])
+      .length;
     return {
       errors: this.state.totalErrors,
       totalChars: currentText.length,
@@ -437,7 +479,9 @@ class AvatarManager {
     this.selectedAvatar = "01.png";
   }
 
-  initialize() { this.loadAvatars(); }
+  initialize() {
+    this.loadAvatars();
+  }
 
   loadAvatars() {
     this.elements.avatarGrid.innerHTML = "";
@@ -454,7 +498,9 @@ class AvatarManager {
     img.className = "avatar-option";
     img.dataset.avatar = filename;
     if (filename === this.selectedAvatar) img.classList.add("selected");
-    img.onerror = () => { img.style.display = "none"; };
+    img.onerror = () => {
+      img.style.display = "none";
+    };
     return img;
   }
 
@@ -486,7 +532,16 @@ class ConfettiManager {
   constructor() {
     this.container = document.getElementById("confetti-container");
     this.interval = null;
-    this.colors = ["#ff6b6b","#4ecdc4","#45b7d1","#feca57","#ee5a6f","#c44569","#f368e0","#ff9ff3"];
+    this.colors = [
+      "#ff6b6b",
+      "#4ecdc4",
+      "#45b7d1",
+      "#feca57",
+      "#ee5a6f",
+      "#c44569",
+      "#f368e0",
+      "#ff9ff3",
+    ];
     this.shapes = ["confetti-square", "confetti-circle", "confetti-rectangle"];
   }
 
@@ -495,12 +550,16 @@ class ConfettiManager {
       setTimeout(() => this.createPiece(), i * 10);
     }
     this.interval = setInterval(() => {
-      for (let i = 0; i < Math.floor(Math.random() * 3) + 3; i++) this.createPiece();
+      for (let i = 0; i < Math.floor(Math.random() * 3) + 3; i++)
+        this.createPiece();
     }, CONFIG.CONFETTI_INTERVAL);
   }
 
   stop() {
-    if (this.interval) { clearInterval(this.interval); this.interval = null; }
+    if (this.interval) {
+      clearInterval(this.interval);
+      this.interval = null;
+    }
   }
 
   createPiece() {
@@ -531,7 +590,9 @@ class QuizApp {
     this.quizManager = new QuizManager(this.elements, CONFIG);
     this.typingTestManager = new TypingTestManager(this.elements, CONFIG);
     this.avatarManager = new AvatarManager(this.elements, CONFIG);
-    this.timerManager = new TimerManager(this.elements.timerContainer, () => this.endQuiz());
+    this.timerManager = new TimerManager(this.elements.timerContainer, () =>
+      this.endQuiz(),
+    );
     this.confettiManager = new ConfettiManager();
 
     this.initEventListeners();
@@ -557,7 +618,9 @@ class QuizApp {
       answersIndicator: document.querySelector(".answers-indicator"),
       nextBtn: document.querySelector(".next-btn"),
       // Phase 2 — Typing
-      questionBoxContainerExtra: document.querySelector(".question-box-container-extra"),
+      questionBoxContainerExtra: document.querySelector(
+        ".question-box-container-extra",
+      ),
       nextBtnExtra: document.querySelector(".next-btn-extra"),
       // Avatar
       avatarImg: document.getElementById("selectedAvatar"),
@@ -583,18 +646,39 @@ class QuizApp {
 
   handleClick(e) {
     // Settings
-    if (e.target.id === "settingsBtn") { this.openSettings(); return; }
-    if (e.target.id === "closeSettings" || e.target.id === "settingsModal") { this.closeSettings(); return; }
-    if (e.target.id === "saveSettings") { this.saveSettings(); return; }
+    if (e.target.id === "settingsBtn") {
+      this.openSettings();
+      return;
+    }
+    if (e.target.id === "closeSettings" || e.target.id === "settingsModal") {
+      this.closeSettings();
+      return;
+    }
+    if (e.target.id === "saveSettings") {
+      this.saveSettings();
+      return;
+    }
 
     // Buttons
     if (e.target.closest(".btn")) {
       const btn = e.target.closest(".btn");
       const text = btn.textContent.trim();
-      if (text === "INGRESAR") { this.handleNameSubmit(); return; }
-      if (text === "¡Comenzar!") { this.startQuiz(); return; }
-      if (btn.classList.contains("next-btn")) { this.handleNext(); return; }
-      if (btn.classList.contains("next-btn-extra")) { this.endQuiz(); return; }
+      if (text === "INGRESAR") {
+        this.handleNameSubmit();
+        return;
+      }
+      if (text === "¡Comenzar!") {
+        this.startQuiz();
+        return;
+      }
+      if (btn.classList.contains("next-btn")) {
+        this.handleNext();
+        return;
+      }
+      if (btn.classList.contains("next-btn-extra")) {
+        this.endQuiz();
+        return;
+      }
       return;
     }
 
@@ -605,20 +689,32 @@ class QuizApp {
     }
 
     // Avatar
-    if (e.target.id === "editAvatarBtn") { this.avatarManager.openModal(); }
-    else if (e.target.id === "closeModal" || e.target.id === "avatarModal") { this.avatarManager.closeModal(); }
-    else if (e.target.classList.contains("avatar-option")) { this.avatarManager.selectAvatar(e.target.dataset.avatar); }
+    if (e.target.id === "editAvatarBtn") {
+      this.avatarManager.openModal();
+    } else if (e.target.id === "closeModal" || e.target.id === "avatarModal") {
+      this.avatarManager.closeModal();
+    } else if (e.target.classList.contains("avatar-option")) {
+      this.avatarManager.selectAvatar(e.target.dataset.avatar);
+    }
   }
 
   handleKeydown(e) {
     if (e.ctrlKey && e.key === "9") {
       e.preventDefault();
-      this.elements.settingsModal.classList.contains("hide") ? this.openSettings() : this.closeSettings();
+      this.elements.settingsModal.classList.contains("hide")
+        ? this.openSettings()
+        : this.closeSettings();
       return;
     }
     if (e.key === "Escape") {
-      if (!this.elements.avatarModal.classList.contains("hide")) { this.avatarManager.closeModal(); return; }
-      if (!this.elements.settingsModal.classList.contains("hide")) { this.closeSettings(); return; }
+      if (!this.elements.avatarModal.classList.contains("hide")) {
+        this.avatarManager.closeModal();
+        return;
+      }
+      if (!this.elements.settingsModal.classList.contains("hide")) {
+        this.closeSettings();
+        return;
+      }
     }
     if (this.currentPhase === "typing") {
       this.typingTestManager.handleInput(e);
@@ -629,7 +725,8 @@ class QuizApp {
     document.addEventListener("contextmenu", (e) => e.preventDefault());
     document.addEventListener("keydown", (e) => {
       const preventKeys = [116, e.ctrlKey && 82, e.ctrlKey && 27];
-      if (preventKeys.includes(e.keyCode) || (e.ctrlKey && e.keyCode === 116)) e.preventDefault();
+      if (preventKeys.includes(e.keyCode) || (e.ctrlKey && e.keyCode === 116))
+        e.preventDefault();
     });
   }
 
@@ -638,7 +735,8 @@ class QuizApp {
     this.elements.checkPhase1.checked = this.settingsManager.settings.phase1;
     this.elements.checkPhase2.checked = this.settingsManager.settings.phase2;
 
-    const { questionSet, questionLimit, maxPts1, maxPts2 } = this.settingsManager.settings;
+    const { questionSet, questionLimit, maxPts1, maxPts2 } =
+      this.settingsManager.settings;
 
     document.getElementById("maxPts1").value = maxPts1 ?? 20;
     document.getElementById("maxPts2").value = maxPts2 ?? 20;
@@ -661,11 +759,14 @@ class QuizApp {
     const limitInput = document.getElementById("questionLimit");
     limitInput.max = maxAvailable;
     limitInput.value = Math.min(questionLimit ?? 10, maxAvailable);
-    document.getElementById("questionLimitMax").textContent = `/ ${maxAvailable}`;
+    document.getElementById("questionLimitMax").textContent =
+      `/ ${maxAvailable}`;
 
     // Actualizar max al cambiar el banco
     list.addEventListener("change", () => {
-      const selected = document.querySelector('input[name="questionSet"]:checked');
+      const selected = document.querySelector(
+        'input[name="questionSet"]:checked',
+      );
       if (selected) {
         const max = QUESTION_SETS[selected.value]?.length || 1;
         limitInput.max = max;
@@ -688,13 +789,36 @@ class QuizApp {
       Utils.showToast("Debés habilitar al menos una fase");
       return;
     }
-    const selectedSet = document.querySelector('input[name="questionSet"]:checked');
-    const questionSet = selectedSet ? selectedSet.value : Object.keys(QUESTION_SETS)[0];
+    const selectedSet = document.querySelector(
+      'input[name="questionSet"]:checked',
+    );
+    const questionSet = selectedSet
+      ? selectedSet.value
+      : Object.keys(QUESTION_SETS)[0];
     const maxAvailable = QUESTION_SETS[questionSet]?.length || 1;
-    const questionLimit = Math.min(Math.max(1, parseInt(document.getElementById("questionLimit").value) || 10), maxAvailable);
-    const maxPts1 = Math.max(1, parseInt(document.getElementById("maxPts1").value) || 20);
-    const maxPts2 = Math.max(1, parseInt(document.getElementById("maxPts2").value) || 20);
-    this.settingsManager.save(phase1, phase2, questionSet, questionLimit, maxPts1, maxPts2);
+    const questionLimit = Math.min(
+      Math.max(
+        1,
+        parseInt(document.getElementById("questionLimit").value) || 10,
+      ),
+      maxAvailable,
+    );
+    const maxPts1 = Math.max(
+      1,
+      parseInt(document.getElementById("maxPts1").value) || 20,
+    );
+    const maxPts2 = Math.max(
+      1,
+      parseInt(document.getElementById("maxPts2").value) || 20,
+    );
+    this.settingsManager.save(
+      phase1,
+      phase2,
+      questionSet,
+      questionLimit,
+      maxPts1,
+      maxPts2,
+    );
     this.closeSettings();
     Utils.showToast("Configuración guardada");
   }
@@ -702,7 +826,10 @@ class QuizApp {
   // ---- Flow ----
   handleNameSubmit() {
     const name = this.elements.nameInput.value.trim();
-    if (!name) { Utils.showToast("Por favor, ingresá tu nombre"); return; }
+    if (!name) {
+      Utils.showToast("Por favor, ingresá tu nombre");
+      return;
+    }
     this.userName = name;
     this.updateInstructions();
     Utils.toggleScreen(this.elements.instructionsBox, this.elements.homeBox);
@@ -712,11 +839,14 @@ class QuizApp {
     const { phase1, phase2 } = this.settingsManager.settings;
     const p = this.elements.homeBox.querySelector("p");
     if (phase1 && phase2) {
-      p.innerHTML = 'Respondé <strong>10 preguntas</strong> de opción múltiple y luego completá la <strong>prueba de escritura</strong>. Los símbolos especiales suman puntos extra.';
+      p.innerHTML =
+        "Responda <strong>preguntas</strong> de opción múltiple y complete la <strong>prueba de escritura</strong>. Los símbolos especiales suman puntos extra.";
     } else if (phase1) {
-      p.innerHTML = 'Leé con <strong>atención</strong> cada pregunta y elegí la respuesta correcta. Hacé clic en <strong>Siguiente</strong> para continuar.';
+      p.innerHTML =
+        "Lea con <strong>atención</strong> cada pregunta y seleccione la respuesta correcta. Haga clic en <strong>Siguiente</strong> para continuar.";
     } else {
-      p.innerHTML = 'Escribí el texto que aparece en pantalla con la mayor <strong>precisión</strong> posible. Los símbolos especiales (<strong>= : ; ( ) " ! / ¿ ? . , -</strong>) suman puntos extra.';
+      p.innerHTML =
+        'Escriba el texto que aparece en pantalla con la mayor <strong>precisión</strong> posible. Los símbolos especiales (<strong>= : ; ( ) " ! / ¿ ? . , -</strong>) suman puntos extra.';
     }
   }
 
@@ -728,19 +858,28 @@ class QuizApp {
     if (phase1) {
       this.currentPhase = "quiz";
       const { questionSet, questionLimit } = this.settingsManager.settings;
-      const questions = QUESTION_SETS[questionSet] || QUESTION_SETS[Object.keys(QUESTION_SETS)[0]];
+      const questions =
+        QUESTION_SETS[questionSet] ||
+        QUESTION_SETS[Object.keys(QUESTION_SETS)[0]];
       this.quizManager.initialize(questions, questionLimit);
       this.quizManager.loadNextQuestion();
-      Utils.toggleScreen(this.elements.questionBoxContainerExtra, this.elements.questionBoxContainer);
+      Utils.toggleScreen(
+        this.elements.questionBoxContainerExtra,
+        this.elements.questionBoxContainer,
+      );
     } else {
       this.currentPhase = "typing";
       this.typingTestManager.initialize();
-      Utils.toggleScreen(this.elements.questionBoxContainer, this.elements.questionBoxContainerExtra);
+      Utils.toggleScreen(
+        this.elements.questionBoxContainer,
+        this.elements.questionBoxContainerExtra,
+      );
     }
   }
 
   handleNext() {
-    const hasAnswered = this.elements.optionContainer.querySelector(".already-answered");
+    const hasAnswered =
+      this.elements.optionContainer.querySelector(".already-answered");
     if (!hasAnswered) return;
 
     if (!this.quizManager.loadNextQuestion()) {
@@ -755,7 +894,10 @@ class QuizApp {
 
   startTypingTest() {
     this.currentPhase = "typing";
-    Utils.toggleScreen(this.elements.questionBoxContainer, this.elements.questionBoxContainerExtra);
+    Utils.toggleScreen(
+      this.elements.questionBoxContainer,
+      this.elements.questionBoxContainerExtra,
+    );
     this.typingTestManager.initialize();
   }
 
@@ -769,14 +911,20 @@ class QuizApp {
 
   // ---- Results ----
   calcTypingScore(typingResults, maxPts) {
-    const { errors, totalChars, correctSpecialChars, totalSpecialChars } = typingResults;
+    const { errors, totalChars, correctSpecialChars, totalSpecialChars } =
+      typingResults;
     const half = maxPts / 2;
-    const accuracyPts = totalChars > 0
-      ? Math.max(0, Math.round(half * (totalChars - errors) / totalChars))
-      : 0;
-    const specialPts = totalSpecialChars > 0
-      ? Math.round(half * Math.min(correctSpecialChars, totalSpecialChars) / totalSpecialChars)
-      : 0;
+    const accuracyPts =
+      totalChars > 0
+        ? Math.max(0, Math.round((half * (totalChars - errors)) / totalChars))
+        : 0;
+    const specialPts =
+      totalSpecialChars > 0
+        ? Math.round(
+            (half * Math.min(correctSpecialChars, totalSpecialChars)) /
+              totalSpecialChars,
+          )
+        : 0;
     return { accuracyPts, specialPts };
   }
 
@@ -786,7 +934,12 @@ class QuizApp {
   }
 
   displayResults() {
-    const { phase1, phase2, maxPts1 = 20, maxPts2 = 20 } = this.settingsManager.settings;
+    const {
+      phase1,
+      phase2,
+      maxPts1 = 20,
+      maxPts2 = 20,
+    } = this.settingsManager.settings;
     const cards = this.elements.resultBox.querySelectorAll(".card");
     let totalPoints = 0;
     let maxPoints = 0;
@@ -796,24 +949,22 @@ class QuizApp {
       const tr = this.typingTestManager.getResults();
       const { accuracyPts, specialPts } = this.calcTypingScore(tr, maxPts2);
       const limit = this.quizManager.currentLimit;
-      const quizPts = Math.round(qr.correctAnswers * maxPts1 / limit);
+      const quizPts = Math.round((qr.correctAnswers * maxPts1) / limit);
       const typingPts = accuracyPts + specialPts;
       totalPoints = quizPts + typingPts;
       maxPoints = maxPts1 + maxPts2;
       this.setCard(cards[0], `${quizPts}/${maxPts1}`, "Quiz");
       this.setCard(cards[1], `${typingPts}/${maxPts2}`, "Escritura");
       this.setCard(cards[2], tr.errors, "Errores");
-
     } else if (phase1) {
       const qr = this.quizManager.getResults();
       const limit = this.quizManager.currentLimit;
-      const quizPts = Math.round(qr.correctAnswers * maxPts1 / limit);
+      const quizPts = Math.round((qr.correctAnswers * maxPts1) / limit);
       totalPoints = quizPts;
       maxPoints = maxPts1;
       this.setCard(cards[0], limit, "Preguntas");
       this.setCard(cards[1], qr.correctAnswers, "Correctas");
       this.setCard(cards[2], qr.wrongAnswers, "Incorrectas");
-
     } else {
       const tr = this.typingTestManager.getResults();
       const half = maxPts2 / 2;
@@ -827,7 +978,8 @@ class QuizApp {
 
     this.elements.resultBox.querySelector(".total-score").textContent =
       `${Math.min(totalPoints, maxPoints)} / ${maxPoints} pts`;
-    this.elements.resultBox.querySelector(".name-result").textContent = this.userName;
+    this.elements.resultBox.querySelector(".name-result").textContent =
+      this.userName;
   }
 }
 
