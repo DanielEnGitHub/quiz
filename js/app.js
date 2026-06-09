@@ -17,17 +17,17 @@ const CONFIG = {
   CONFETTI_INTERVAL: 200,
   SPECIAL_CHARS_REGEX: /[:;()"!¿?.,-]/g,
   TYPING_TEXTS: [
-    'Antes de que Sansón naciera, un ángel se apareció a su madre y le dijo: "Tendrás un hijo especial; nunca deberá cortarse el cabello." Desde joven, Sansón demostró una fuerza sobrenatural - mató a un león con sus propias manos y derrotó a muchos enemigos filisteos él solo. !Era verdaderamente extraordinario! Sin embargo, tenía una debilidad: no siempre tomaba buenas decisiones. Se enamoró de Dalila, una mujer que trabajaba para sus enemigos. Ella le preguntó muchas veces: "¿Cuál es el secreto de tu fuerza?" Finalmente, Sansón confesó la verdad. Lo traicionaron (mientras dormía), le cortaron el cabello y lo capturaron. En la cárcel, su cabello volvió a crecer; Sansón oró con humildad y Dios le restauró su fuerza. Su historia nos recuerda: los dones de Dios son para usarse con responsabilidad.',
+    'Un ángel dijo a la madre de Sansón: "Tu hijo nunca deberá cortarse el cabello." Desde joven demostró fuerza sobrenatural - mató a un león con sus manos. !Era extraordinario! Su debilidad: no tomaba buenas decisiones. Dalila le preguntó: "¿Cuál es el secreto de tu fuerza?" Finalmente confesó la verdad. Lo traicionaron (mientras dormía), le cortaron el cabello y lo capturaron. En la cárcel su cabello volvió a crecer; Sansón oró y Dios le restauró su fuerza.',
 
-    'Ana había orado durante años por tener un hijo; le prometió a Dios: "Si me das un niño, te lo devolveré para que te sirva toda su vida." Dios escuchó su oración y nació Samuel. Cuando era pequeño (apenas unos años), su madre lo llevó al templo con el sacerdote Elí. Una noche, Samuel escuchó una voz que lo llamaba: "!Samuel, Samuel!" Él corrió donde Elí y le dijo: "!Aquí estoy!; ¿me llamaste?" Pero Elí respondió: "Yo no te llamé - vuelve a acostarte." Esto ocurrió tres veces. Finalmente, Elí entendió que era Dios quien llamaba al niño y le explicó: "Si te llama de nuevo, di: Habla, Señor; tu siervo escucha." Samuel obedeció y desde esa noche se convirtió en profeta de Israel.',
+    'Ana le prometió a Dios: "Si me das un niño, te lo devolveré." Nació Samuel y su madre lo llevó al templo (con el sacerdote Elí). Una noche escuchó una voz: "!Samuel, Samuel!" Corrió y le dijo a Elí: "!Aquí estoy!; ¿me llamaste?" Elí respondió: "No te llamé - vuelve a acostarte." Finalmente le explicó: "Si te llama, di: Habla, Señor; tu siervo escucha." Samuel obedeció y se convirtió en profeta de Israel.',
 
-    'David era el más joven de ocho hermanos; pasaba sus días cuidando ovejas en el campo. Nadie esperaba que ese muchacho - pequeño y sencillo - llegara a ser rey de Israel. Cuando el profeta Samuel fue a la casa de Jesé para ungir al nuevo rey, Dios le dijo algo importante: "Los seres humanos ven lo exterior, pero yo veo el corazón." Así fue como eligió a David. Sin embargo, el camino no fue fácil: David enfrentó al gigante Goliat (con solo una honda y una piedra), huyó del rey Saúl por años, y cometió errores graves. Aun así, siempre regresó a Dios con arrepentimiento sincero. !Por eso Dios lo llamó "un hombre conforme a su corazón"! La historia de David nos enseña que no importa cuántas veces caigamos; lo que importa es levantarse y volver a Dios.',
+    'David era el más joven de ocho hermanos; cuidaba ovejas. ¿Quién esperaba que ese muchacho - pequeño y sencillo - llegara a ser rey? Dios le dijo a Samuel: "Los seres humanos ven lo exterior, pero yo veo el corazón." El camino no fue fácil: enfrentó a Goliat (con una honda y una piedra), huyó del rey Saúl por años, y cometió errores graves. !Por eso Dios lo llamó "un hombre conforme a su corazón"!',
 
-    'David no solo fue un guerrero valiente; también fue poeta y músico. Desde niño aprendió a tocar el arpa - instrumento que usaba para adorar a Dios mientras cuidaba sus ovejas. Escribió muchos salmos (canciones de oración) que todavía leemos hoy. El más famoso es el Salmo 23, que dice: "El Señor es mi pastor; nada me faltará." ¿Por qué lo comparó con un pastor? Porque David conocía muy bien ese trabajo: sabía que el pastor guía, protege y cuida a sus ovejas con amor. Cuando David pasó por momentos difíciles - persecuciones, guerras y tristezas - siempre encontró paz en la oración. Sus palabras nos recuerdan algo hermoso: Dios nos cuida como un pastor a sus ovejas, y jamás nos abandona. !Qué privilegio tan grande es ser amado por Él!',
+    'David fue guerrero; pero también poeta y músico. Aprendió a tocar el arpa - instrumento para adorar a Dios. Escribió muchos salmos (canciones de oración) que leemos hoy. El más famoso es el Salmo 23: "El Señor es mi pastor; nada me faltará." ¿Por qué lo comparó con un pastor? Porque conocía ese trabajo: el pastor guía y cuida a sus ovejas con amor. !Qué privilegio tan grande ser amado por Él!',
 
-    'Al principio no existía nada - solo oscuridad total. Entonces Dios habló, y todo comenzó a tomar forma. En el primer día creó la luz; en el segundo, separó las aguas del cielo. El tercer día apareció la tierra seca (con plantas y árboles llenos de frutos). El cuarto día colocó el sol, la luna y las estrellas. !Qué espectáculo tan impresionante debió ser! El quinto día llenó los mares con peces y el cielo con aves de toda clase. El sexto día fue el más especial: creó a los animales terrestres y luego, con mucho cuidado, formó al ser humano. Dios dijo: "Hagamos al hombre a nuestra imagen y semejanza." Lo creó del polvo de la tierra y sopló vida en él. ¿Sabes lo que significa eso? Que cada persona tiene algo de Dios en su interior. Al séptimo día Él descansó, bendiciendo ese día como especial.',
+    'Al principio no existía nada - solo oscuridad. Dios habló y todo tomó forma: creó la luz; separó las aguas y apareció la tierra seca (con plantas). !Qué espectáculo impresionante! Colocó el sol, la luna y las estrellas. Llenó los mares de peces y el cielo de aves. Finalmente formó al ser humano y dijo: "Hagamos al hombre a nuestra imagen y semejanza." ¿Sabes lo que eso significa? Que cada persona tiene algo de Dios en su interior.',
 
-    'Un maestro de la ley le preguntó a Jesús: "¿Quién es mi prójimo?" Jesús respondió con una historia: un hombre viajaba de Jerusalén a Jericó - un camino peligroso - cuando unos ladrones lo atacaron; lo dejaron herido y sin nada. Pasó un sacerdote (persona importante de la iglesia) y lo vio, pero cruzó al otro lado. Luego pasó otro líder religioso; tampoco se detuvo. Finalmente llegó un samaritano - alguien a quien los judíos despreciaban - y al ver al herido, se llenó de compasión. Lo curó, lo cargó en su burro, lo llevó a una posada y pagó todos los gastos. !Eso sí es amor al prójimo! Jesús preguntó: "¿Cuál de los tres fue el verdadero prójimo?" La respuesta era clara: el que mostró misericordia. Luego dijo algo que debemos recordar siempre: "Ve y haz tú lo mismo."',
+    'Un maestro le preguntó a Jesús: "¿Quién es mi prójimo?" Un hombre viajaba a Jericó - camino peligroso - cuando ladrones lo atacaron; lo dejaron herido y sin nada. Pasó un sacerdote (persona importante) pero cruzó al otro lado; tampoco se detuvo otro líder. Finalmente llegó un samaritano - despreciado por los judíos - y al ver al herido, se llenó de compasión. Lo curó, lo llevó a una posada y pagó los gastos. !Eso sí es amor al prójimo! Jesús dijo: "Ve y haz tú lo mismo."',
   ],
 };
 
@@ -411,6 +411,7 @@ class TypingTestManager {
     spans[this.state.currentIndex].className = "char-current";
     if (isSpace)
       spans[this.state.currentIndex].setAttribute("data-space", "true");
+    this.scrollToCurrent(spans);
   }
 
   handleCharacterInput(char, key, spans) {
@@ -439,10 +440,17 @@ class TypingTestManager {
 
     if (this.state.currentIndex < currentText.length) {
       spans[this.state.currentIndex].classList.add("char-current");
+      this.scrollToCurrent(spans);
     } else {
       this.state.completed = true;
       this.elements.nextBtnExtra.classList.remove("disabled-btn");
     }
+  }
+
+  scrollToCurrent(spans) {
+    const current = spans[this.state.currentIndex];
+    if (current)
+      current.scrollIntoView({ behavior: "smooth", block: "center" });
   }
 
   getResults() {
