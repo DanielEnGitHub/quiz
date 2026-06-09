@@ -9,7 +9,7 @@
 const CONFIG = {
   QUESTION_LIMIT: 10,
   POINTS_PER_QUESTION: 2,
-  TIME_VALUE: 960,
+  TIME_VALUE: 1080,
   TOTAL_AVATARS: 19,
   OPTIONS_DELAY: 800,
   AVATAR_CLOSE_DELAY: 300,
@@ -21,9 +21,9 @@ const CONFIG = {
 
     'Ana le prometió a Dios: "Si me das un niño, te lo devolveré." Nació Samuel y su madre lo llevó al templo (con el sacerdote Elí). Una noche escuchó una voz: "!Samuel, Samuel!" Corrió y le dijo a Elí: "!Aquí estoy!; ¿me llamaste?" Elí respondió: "No te llamé - vuelve a acostarte." Finalmente le explicó: "Si te llama, di: Habla, Señor; tu siervo escucha." Samuel obedeció y se convirtió en profeta de Israel.',
 
-    'David era el más joven de ocho hermanos; cuidaba ovejas. ¿Quién esperaba que ese muchacho - pequeño y sencillo - llegara a ser rey? Dios le dijo a Samuel: "Los seres humanos ven lo exterior, pero yo veo el corazón." El camino no fue fácil: enfrentó a Goliat (con una honda y una piedra), huyó del rey Saúl por años, y cometió errores graves. !Por eso Dios lo llamó "un hombre conforme a su corazón"!',
+    'David era el más joven de ocho hermanos; cuidaba ovejas. ¿Quién esperaba que ese muchacho - pequeño y sencillo - llegara a ser rey? Dios le dijo a Samuel: "Los seres humanos ven lo exterior, pero yo veo el corazón." El camino no fue fácil: enfrentó a Goliat (con una honda y una piedra), huyó del rey Saúl por años, y cometió errores graves pero siempre regreso a Dios. !Por eso Dios lo llamó "un hombre conforme a su corazón"!',
 
-    'David fue guerrero; pero también poeta y músico. Aprendió a tocar el arpa - instrumento para adorar a Dios. Escribió muchos salmos (canciones de oración) que leemos hoy. El más famoso es el Salmo 23: "El Señor es mi pastor; nada me faltará." ¿Por qué lo comparó con un pastor? Porque conocía ese trabajo: el pastor guía y cuida a sus ovejas con amor. !Qué privilegio tan grande ser amado por Él!',
+    'David fue guerrero; pero también poeta y músico. Aprendió a tocar el arpa - instrumento para adorar a Dios. Escribió muchos salmos (canciones de oración) que leemos hoy. El más famoso es el Salmo 23: "El Señor es mi pastor; nada me faltará." ¿Por qué lo comparó con un pastor? Porque conocía ese trabajo: el pastor guía y cuida a sus ovejas con amor. !Qué privilegio tan grande ser amado por Dios!',
 
     'Al principio no existía nada - solo oscuridad. Dios habló y todo tomó forma: creó la luz; separó las aguas y apareció la tierra seca (con plantas). !Qué espectáculo impresionante! Colocó el sol, la luna y las estrellas. Llenó los mares de peces y el cielo de aves. Finalmente formó al ser humano y dijo: "Hagamos al hombre a nuestra imagen y semejanza." ¿Sabes lo que eso significa? Que cada persona tiene algo de Dios en su interior.',
 
@@ -53,10 +53,11 @@ class SettingsManager {
       questionLimit: 10,
       maxPts1: 20,
       maxPts2: 20,
+      duration: 18,
     };
   }
 
-  save(phase1, phase2, questionSet, questionLimit, maxPts1, maxPts2) {
+  save(phase1, phase2, questionSet, questionLimit, maxPts1, maxPts2, duration) {
     this.settings = {
       phase1,
       phase2,
@@ -64,6 +65,7 @@ class SettingsManager {
       questionLimit,
       maxPts1,
       maxPts2,
+      duration,
     };
     localStorage.setItem("quizSettings", JSON.stringify(this.settings));
   }
@@ -743,11 +745,12 @@ class QuizApp {
     this.elements.checkPhase1.checked = this.settingsManager.settings.phase1;
     this.elements.checkPhase2.checked = this.settingsManager.settings.phase2;
 
-    const { questionSet, questionLimit, maxPts1, maxPts2 } =
+    const { questionSet, questionLimit, maxPts1, maxPts2, duration } =
       this.settingsManager.settings;
 
     document.getElementById("maxPts1").value = maxPts1 ?? 20;
     document.getElementById("maxPts2").value = maxPts2 ?? 20;
+    document.getElementById("quizDuration").value = duration ?? 18;
 
     const savedSet = questionSet || Object.keys(QUESTION_SETS)[0];
     const list = document.getElementById("questionSetList");
@@ -819,6 +822,13 @@ class QuizApp {
       1,
       parseInt(document.getElementById("maxPts2").value) || 20,
     );
+    const duration = Math.min(
+      60,
+      Math.max(
+        1,
+        parseInt(document.getElementById("quizDuration").value) || 18,
+      ),
+    );
     this.settingsManager.save(
       phase1,
       phase2,
@@ -826,6 +836,7 @@ class QuizApp {
       questionLimit,
       maxPts1,
       maxPts2,
+      duration,
     );
     this.closeSettings();
     Utils.showToast("Configuración guardada");
@@ -859,9 +870,9 @@ class QuizApp {
   }
 
   startQuiz() {
-    const { phase1, phase2 } = this.settingsManager.settings;
+    const { phase1, phase2, duration } = this.settingsManager.settings;
     Utils.toggleScreen(this.elements.homeBox, this.elements.quizBox);
-    this.timerManager.start();
+    this.timerManager.start((duration ?? 18) * 60);
 
     if (phase1) {
       this.currentPhase = "quiz";
